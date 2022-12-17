@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>learning flex box</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="faviconn/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/46c1dafdeb.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+  .navbar {
+    background-color: #ab2a2a;
+    border-radius: 35px;
+  }
+
+  .navbar ul {
+    overflow: auto;
+    list-style: none;
+  }
+
+
+
+  .navbar li {
+    float: left;
+    margin: 13px 3px;
+    padding: 0px 23px;
+  }
+
+  .navbar li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .navbar li a:hover {
+    color: green;
+  }
+
+  .search {
+    float: right;
+    color: white;
+    padding: 12px 152px;
+  }
+
+  .navbar input {
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 129px;
+  }
+  @media screen and (max-width: 600px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  li {
+    width: 100%;
+  }
+}
+</style>
+
+<body>
+  
+  <h1 class="heading">this is a heading</h1>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">home</a></li>
+      <li><a href="#">location</a></li>
+      <li><a href="#">address</a></li>
+      <li><a href="#">contact</a></li>
+      <div class="search">
+        <input type="text" name="search " id="search" placeholder="search here">
+      </div>
+    </ul>
+  </nav>
+
+
+    <div class="border">this is just a border</div>
+
+    <div id="id">this is for the text</div>
+
+    <div class="font">this is for the font</div>
+
+    <h3>using the icons from the font awsome</h3>
+    <div>
+        <i class="fa-brands fa-facebook">
+            <i class="fas fa-cloud"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-car"></i>
+            <i class="fas fa-file"></i>
+            <i class="fas fa-bars"></i></i>
+        </i>
+    </div>
+    <div>
+        <a href="#">this is for the link</a>
+    </div>
+    <div>
+
+        <a href="#" class="highlight">Another link</a>
+    </div>
+
+    <p>Example of unordered lists:</p>
+    <ul class="table">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <table>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>Griffin</td>
+        </tr>
+      </table>
+
+
+
+      <div class="pseudoClass">
+        <p>This is some text.</p>
+        <p>This is some text.</p>
+        <p>This is some text.</p>
+        <p>This is some text.</p>
+        <p>This is some text.</p>
+        <p>This is some text.</p>
+        <p>This is some text.</p>
+        <p>This is some text.</p>
+      </div>
+        <div class="element">
+    <p>You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter
+      and the first line of a text!</p>
+  </div>
+
+    <div class="container">
+
+    <div class="x" id="x1">1</div>
+    <div class="x" id="x2">2</div>
+    <div class="x" id="x3">3</div>
+    <div class="x" id="x4">4</div>
+  </div>
+
+  
+  <div class="mouse">mouse over me </div>
+
+ <div class="color">
+  this is the for the linear gradient
+ </div>
+
+ <div class="gradient">
+  this is the conic gradient
+ </div>
+ <div>
+  <img src="img/ab.jpg" alt="">
+ </div>
+
+ <div id="transform">2d transform</div>
+
+ <div id="animate">using the animation</div>
+
+ <div class="flex-container">
+
+   <div class="box" id="box1">1</div>
+   <div class="box" id="box2">2</div>
+   <div class="box" id="box3">3</div>
+   <!-- <div class="box" id="box4">4</div>
+   <div class="box" id="box5">5</div>
+   <div class="box" id="box6">6</div>
+   <div class="box" id="box7">7</div>
+   <div class="box" id="box8">8</div>
+   <div class="box" id="box9">9</div>
+   <div class="box" id="box1">1</div>
+   <div class="box" id="box2">2</div>
+   <div class="box" id="box3">3</div>
+   <div class="box" id="box4">4</div>
+   <div class="box" id="box5">5</div>
+   <div class="box" id="box6">6</div>
+   <div class="box" id="box7">7</div>
+   <div class="box" id="box8">8</div>
+   <div class="box" id="box9">9</div> -->
+   
+  </div>
+<br> <br>
+    <div class="grid-container">
+
+        <div class="ox" id="ox1">1</div>
+        <div class="ox" id="ox2">2</div>
+        <div class="ox" id="ox3">3</div>
+        <div class="ox" id="ox4">4</div>
+        <div class="ox" id="ox5">5</div>
+        <div class="ox" id="ox6">6</div>
+        <div class="ox" id="ox7">7</div>
+        <div class="ox" id="ox8">8</div>
+        <div class="ox" id="ox9">9</div>
+   
+       </div> -->
+
+
+</body>
+
+</html>

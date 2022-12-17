@@ -1,0 +1,226 @@
+.heading {
+    background-color: rgba(65, 30, 224, 0.5);
+    color: white;
+    text-align: center;
+}
+
+.border {
+    box-sizing: border-box;
+    background-color: brown;
+    font-size: 30px;
+    border: 2px solid black;
+    outline: 2px solid green;
+    text-align: center;
+    margin: 100px;
+    padding: 100px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 5px lightblue;
+    cursor: pointer;
+}
+
+#id {
+    font-size: 30px;
+    text-align: right;
+    text-transform: capitalize;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-shadow: 2px 2px 5px green;
+    letter-spacing: 3px;
+}
+
+.font {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    cursor: pointer;
+}
+
+a:link {
+    color: red;
+}
+
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+
+a:active {
+    color: blue;
+}
+
+a.highlight:hover {
+    font-size: 50px;
+}
+
+.table {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50%;
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+}
+
+div.pseudoClass p:nth-child(odd) {
+    color: red;
+}
+div.element p::first-letter {
+    color: green;
+    font-size: 50px;
+}
+
+div.element p::first-line {
+    color: blue;
+    font-size: 30px;
+}
+
+::selection {
+    color: white;
+    background: blue;
+}
+
+.container {
+    border: 12px solid black;
+}
+
+.x {
+    display: inline-block;
+    border: 2px solid red;
+    width: 150px;
+    height: 150px;
+    margin: 2px;
+}
+
+#x3 {
+    /* relative to its normal position */
+    position: relative;
+    /* visibility: hidden; 
+    display: none;*/
+    top: 30px;
+    left: 30px;
+}
+.mouse{
+    background-color: green;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+div.mouse:hover {
+    background-color: blue;
+    text-align: right;
+}
+
+
+
+.color {
+    height: 200px;
+    width: 1000px;
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+.gradient {
+    font-size: 30px;
+    height: 200px;
+    width: 1000px;
+    background-image: radial-gradient(red, yellow, green);
+}
+
+img {
+    border-radius: 50%;
+}
+
+#transform {
+    width: 250px;
+    height: 150px;
+    background-color: tomato;
+    margin: 150px 300px;
+    transition: all 2s ease-in-out;
+}
+
+#transform:hover {
+    /* transform: rotate(130deg); */
+    /* transform: translate(50px, 50px); */
+    /* transform: scale(2,2); */
+    transform: skew(20deg,30deg);
+    width: 300px;
+    height: 300px;
+background-color: green;
+}
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+#animate{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: reverse; */
+    animation-timing-function: ease-in-out;
+}
+
+.flex-container{
+    background-color: indianred;
+    display: flex;
+    /* flex-direction: row,row-reverse,column,column-reverse; */
+    /* flex-wrap: no-wrap,wrap ; */
+    /* flex-flow: column wrap; shorthand property of direction and wrap */
+    justify-content: center;
+
+
+}
+.box{
+    background-color: wheat;
+    margin: 20px;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+}
+.grid-container{
+    background-color: indianred;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 200px 200px 300px;
+    grid-template-rows: 100px 100px auto;
+    gap: 10px;
+    justify-content: space-evenly;
+    /* height: 500px; */
+    align-content: start;
+   
+}
+.ox{
+    background-color: wheat;
+    border: 2px solid black;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+#ox1{
+    /* grid-column: 1/ span 3; */
+}
+#ox5{
+    grid-area:1/2/3/4 ;
+}
